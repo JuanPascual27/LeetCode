@@ -1,4 +1,5 @@
 package Medium;
+import utils.ListNode;
 
 /*
         2. Add Two Numbers
@@ -57,8 +58,8 @@ public class AddTwoNumbers {
                 pointer.val++;
                 carry = false;
             }
-            if ((int)pointer.val/10 > 0) {
-                pointer.val = pointer.val%10;
+            if ((int)pointer.val / 10 > 0) {
+                pointer.val = pointer.val % 10;
                 carry = true;
             }
             if (l1 != null || l2 != null || carry)
